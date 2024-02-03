@@ -21,8 +21,6 @@ fun main(){
     }
     if(winner == "Tie")
         println("It's a tie")
-    else if(winner == "Player")
-        println("Player won!")
     else
-        println("Computer won!");
+        println(winner + " won!");
 }
