@@ -13,4 +13,16 @@ fun main(){
     else
         computerChoice = "Scissors"
     println(computerChoice)
+    val winner = when{
+        playerChoice == computerChoice -> "Tie"
+        playerChoice == "Rock" && computerChoice == "Scissors" -> "Player"
+        playerChoice == "Scissors" && computerChoice == "Paper" -> "Player"
+        else -> "Computer"
+    }
+    if(winner == "Tie")
+        println("It's a tie")
+    else if(winner == "Player")
+        println("Player won!")
+    else
+        println("Computer won!");
 }
